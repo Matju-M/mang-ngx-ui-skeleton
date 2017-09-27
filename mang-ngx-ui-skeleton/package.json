@@ -1,0 +1,57 @@
+{
+    "name": "@mang/ngx-ui-skeleton",
+    "version": "0.1.0",
+    "description": "External NGx UI Library Skeleton",
+    "keywords": [
+        "skeleton",
+        "mang"
+    ],
+    "main": "./dist/index.js",
+    "typings": "./dist/index.d.ts",
+    "scripts": {
+      "build": "rimraf dist && gulp copy:styles && rollup -c && rimraf dist/src",
+      "aot": "gulp aot && npm run ngc && gulp clean:post",
+      "ngc": "node_modules/.bin/ngc -p tsconfig-aot.json",
+      "lint": "tslint 'src/**/*.ts'"
+    },
+    "author": "Matthew Mangion",
+    "license": "MIT",
+    "dependencies": {},
+    "peerDependencies": {
+      "@angular/common": "^4.4.3",
+      "@angular/core": "^4.4.3"
+    },
+    "devDependencies": {
+      "@angular/animations": "^4.4.3",
+      "@angular/common": "^4.4.3",
+      "@angular/compiler": "^4.4.3",
+      "@angular/compiler-cli": "^4.4.3",
+      "@angular/core": "^4.4.3",
+      "@angular/platform-browser": "^4.4.3",
+      "@angular/platform-browser-dynamic": "^4.4.3",
+      "@types/node": "^8.0.28",
+      "clean-css": "^4.1.9",
+      "codelyzer": "^3.2.0",
+      "del": "^3.0.0",
+      "gulp": "^3.9.1",
+      "gulp-inline-ng2-template": "^4.0.0",
+      "gulp-sass": "^3.1.0",
+      "html-minifier": "^3.5.5",
+      "node-sass": "^4.5.3",
+      "require-dir": "^0.3.2",
+      "rollup": "^0.49.3",
+      "rollup-plugin-angular-aot": "0.0.4",
+      "rollup-plugin-cleanup": "^1.0.1",
+      "rollup-plugin-node-resolve-angular": "^2.0.3",
+      "rollup-plugin-typescript2": "^0.5.2",
+      "run-sequence": "^2.2.0",
+      "rxjs": "^5.4.2",
+      "tslint": "^5.7.0",
+      "typescript": "^2.5.2",
+      "zone.js": "^0.8.14"
+    },
+    "files": [
+      "dist"
+    ]
+  }
+  

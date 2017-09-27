@@ -1,0 +1,38 @@
+{
+    "compileOnSave": false,
+    "compilerOptions": {
+        "strict": true,
+        "sourceMap": true,
+        "declaration": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "noImplicitAny": false,
+        "target": "es5",
+        "module": "es2015",
+        "moduleResolution": "node",
+        "mapRoot": "",
+        "outDir": "./dist",
+        "skipLibCheck": true,
+        "baseUrl": "",
+        "types": [
+            "node"
+         ],
+        "typeRoots": [
+            "node_modules/@types"
+        ],
+        "lib": [
+            "es6",
+            "es2015",
+            "dom"
+        ]
+    },
+    "include":[
+        "src/**/*.ts"
+    ],
+	"exclude": [
+		"src/**/*.spec.ts",
+        "node_modules",
+        "dist",
+        "tmp"
+	]
+}
