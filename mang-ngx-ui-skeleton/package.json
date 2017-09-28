@@ -17,10 +17,6 @@
     "author": "Matthew Mangion",
     "license": "MIT",
     "dependencies": {},
-    "peerDependencies": {
-      "@angular/common": "^4.4.3",
-      "@angular/core": "^4.4.3"
-    },
     "devDependencies": {
       "@angular/animations": "^4.4.3",
       "@angular/common": "^4.4.3",
