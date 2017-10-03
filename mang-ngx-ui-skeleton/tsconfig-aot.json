@@ -1,12 +1,11 @@
 {
     "extends": "./tsconfig-base",
     "compilerOptions": {
-        "outDir": "./dist",
         "rootDir": "./tmp/src-inlined",
-        "baseUrl": ".",
+        "baseUrl": "",
         "paths": {
-          "@angular/core": ["./node_modules/@angular/core"]
-        }    
+            "@angular/core": ["./node_modules/@angular/core"]
+        }
     },
     "files": [
         "./tmp/src-inlined/index.ts"
@@ -16,7 +15,7 @@
         "debug": false,
         "skipTemplateCodegen": true,
         "annotateForClosureCompiler": true,
-        "skipMetadataEmit": false,
+        "skipMetadataEmit": true,
         "strictMetadataEmit": true
     }
 }

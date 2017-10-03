@@ -3,7 +3,8 @@ import cleanup from "rollup-plugin-cleanup";
 import nodeResolve from "rollup-plugin-node-resolve-angular";
 
 const globals = {
-	"@angular/core": "ng.core",
+    "@angular/core": "ng.core",
+    // "rxjs/Observable": "Rx",
 };
 
 export default {
