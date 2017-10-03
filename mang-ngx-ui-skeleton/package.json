@@ -16,7 +16,9 @@
   },
   "author": "Matthew Mangion",
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "tslib": "^1.7.1"
+  },
   "devDependencies": {
     "@angular/animations": "^5.0.0-rc",
     "@angular/common": "^5.0.0-rc",
