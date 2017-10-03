@@ -1,20 +1,12 @@
 {
+    "extends": "./tsconfig-base",
     "compilerOptions": {
-        "strict": true,
-        "declaration": true,
-        "emitDecoratorMetadata": true,
-        "experimentalDecorators": true,
-        "lib": [
-            "es2015",
-            "dom"
-        ],
-        "noImplicitAny": false,
-        "target": "es5",
-        "module": "es2015",
-        "moduleResolution": "node",
-        "skipLibCheck": true,
         "outDir": "./dist",
-        "rootDir": "./tmp/src-inlined"
+        "rootDir": "./tmp/src-inlined",
+        "baseUrl": ".",
+        "paths": {
+          "@angular/core": ["./node_modules/@angular/core"]
+        }    
     },
     "files": [
         "./tmp/src-inlined/index.ts"
