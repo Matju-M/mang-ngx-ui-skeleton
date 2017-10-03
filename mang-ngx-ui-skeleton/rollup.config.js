@@ -1,17 +1,9 @@
 import typescript from "rollup-plugin-typescript2";
 import cleanup from "rollup-plugin-cleanup";
 import nodeResolve from "rollup-plugin-node-resolve-angular";
-import CleanCSS from "clean-css";
 
 const globals = {
 	"@angular/core": "ng.core",
-};
-
-const cssmin = new CleanCSS();
-const htmlminOpts = {
-    caseSensitive: true,
-    collapseWhitespace: true,
-    removeComments: true,
 };
 
 export default {
