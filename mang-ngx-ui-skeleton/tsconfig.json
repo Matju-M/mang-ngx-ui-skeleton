@@ -6,7 +6,8 @@
         "mapRoot": ""
     },
     "types": [
-        "node"
+        "jasmine",
+        "karma"
      ],
     "typeRoots": [
         "node_modules/@types"
