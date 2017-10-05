@@ -12,7 +12,7 @@
     "build": "rimraf dist && npm run lint && gulp copy:styles && rollup -c && rimraf dist/src",
     "aot": "gulp aot && npm run lint && npm run ngc && gulp clean:post",
     "ngc": "node_modules/.bin/ngc -p tsconfig-aot.json",
-    "lint": "tsfmt -r && tslint 'src/**/*.ts'",
+    "lint": "tsfmt -r && tslint src/**/*.ts && stylelint src/**/*.scss --fix",
     "test": "karma start"
   },
   "author": "Matthew Mangion",
@@ -49,6 +49,7 @@
     "rollup-plugin-typescript2": "^0.5.2",
     "run-sequence": "^2.2.0",
     "rxjs": "^5.4.2",
+    "stylelint-config-standard": "^17.0.0",
     "tslint": "^5.7.0",
     "typescript": "^2.5.2",
     "zone.js": "^0.8.14"
