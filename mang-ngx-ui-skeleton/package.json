@@ -13,7 +13,8 @@
     "aot": "gulp aot && npm run lint && npm run ngc && gulp clean:post",
     "ngc": "node_modules/.bin/ngc -p tsconfig-aot.json",
     "lint": "tsfmt -r && tslint src/**/*.ts && stylelint src/**/*.scss --fix",
-    "test": "karma start"
+    "test": "karma start",
+    "commitmsg": "commitlint -e"
   },
   "author": "Matthew Mangion",
   "license": "MIT",
@@ -28,6 +29,8 @@
     "@angular/core": "^5.0.0-rc",
     "@angular/platform-browser": "^5.0.0-rc",
     "@angular/platform-browser-dynamic": "^5.0.0-rc",
+    "@commitlint/cli": "^4.1.0",
+    "@commitlint/config-angular": "^3.1.1",
     "@types/jasmine": "^2.6.0",
     "@types/karma": "^1.7.0",
     "@types/node": "^8.0.28",
@@ -36,6 +39,7 @@
     "gulp": "^3.9.1",
     "gulp-inline-ng2-template": "^4.0.0",
     "gulp-sass": "^3.1.0",
+    "husky": "^0.14.3",
     "jasmine-core": "^2.8.0",
     "karma": "^1.7.1",
     "karma-jasmine": "^1.1.0",
@@ -49,7 +53,9 @@
     "rollup-plugin-typescript2": "^0.5.2",
     "run-sequence": "^2.2.0",
     "rxjs": "^5.4.2",
+    "stylelint": "^8.1.1",
     "stylelint-config-standard": "^17.0.0",
+    "stylelint-order": "^0.7.0",
     "tslint": "^5.7.0",
     "typescript": "^2.5.2",
     "zone.js": "^0.8.14"
