@@ -17,7 +17,7 @@ describe("TestComponentSpecs", () => {
 		async(() => {
 			TestBed.configureTestingModule({
 				imports: [CoreModule]
-			}).compileComponents().then(() => { /* Don"t do anything */ });
+			}).compileComponents().then(() => { /* do something... */ });
 		})
 	);
 
