@@ -4,7 +4,7 @@ const runSeq = require("run-sequence");
 
 require("require-dir")("./tasks");
 
-gulp.task("aot", (cb) => {
+gulp.task("prepare", (cb) => {
     return runSeq("clean:pre", ["copy:styles", "inline:templates"], cb)
 });
 

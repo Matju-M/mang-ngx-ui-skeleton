@@ -8,7 +8,7 @@ const globals = {
 };
 
 export default {
-    entry: "./src/index.ts",
+    entry: "./tmp/src-inlined/index.ts",
     dest: "./dist/index.js",
     format: "umd",
     exports: "named",

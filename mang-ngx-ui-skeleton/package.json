@@ -9,8 +9,8 @@
   "main": "./dist/index.js",
   "typings": "./dist/index.d.ts",
   "scripts": {
-    "build": "rimraf dist && npm run lint && gulp copy:styles && rollup -c && rimraf dist/src",
-    "aot": "gulp aot && npm run lint && npm run ngc && gulp clean:post",
+    "build": "rimraf dist && gulp prepare && npm run lint && gulp copy:styles && rollup -c && rimraf dist/src && gulp clean:post",
+    "aot": "gulp prepare && npm run lint &&  npm run ngc && gulp clean:post",
     "ngc": "node_modules/.bin/ngc -p tsconfig-aot.json",
     "lint": "tsfmt -r && tslint src/**/*.ts && stylelint src/**/*.scss --fix",
     "test": "karma start",
