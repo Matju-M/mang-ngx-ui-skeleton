@@ -1,4 +1,4 @@
-import { CoreModule } from "./../module";
+import { CoreModule } from "../module";
 import {
 	async,
 	ComponentFixture,
