@@ -18,10 +18,10 @@ Build project in JIT or AOT.
 
 For JIT Compilation:
 ``` 
-npm run build 
+yarn build 
 ```
 
 For AOT Compilation:
 ```
-npm run aot
+yarn aot
 ```
