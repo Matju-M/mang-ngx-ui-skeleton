@@ -15,7 +15,7 @@
         "debug": false,
         "skipTemplateCodegen": true,
         "annotateForClosureCompiler": true,
-        "skipMetadataEmit": true,
+        "skipMetadataEmit": false,
         "strictMetadataEmit": true
     }
 }
