@@ -7,7 +7,7 @@ The skeleton for Ng Ui Libraries.
 Install global dependencies:
 
 ```
-yarn global add stylelint typescript-formatter gulp
+yarn global add stylelint gulp
 ```
 
 ### Step 2 - Install Packages
