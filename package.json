@@ -47,10 +47,10 @@
     "karma-typescript": "^3.0.7",
     "karma-typescript-angular2-transform": "^1.0.2",
     "require-dir": "^0.3.2",
-    "rollup": "^0.49.3",
+    "rollup": "^0.50.0",
     "rollup-plugin-cleanup": "^1.0.1",
     "rollup-plugin-node-resolve-angular": "^2.0.3",
-    "rollup-plugin-typescript2": "^0.5.2",
+    "rollup-plugin-typescript2": "^0.7.0",
     "run-sequence": "^2.2.0",
     "rxjs": "^5.4.2",
     "stylelint": "^8.1.1",
@@ -58,6 +58,7 @@
     "stylelint-order": "^0.7.0",
     "tslint": "^5.7.0",
     "typescript": "^2.5.2",
+    "typescript-formatter": "^6.0.0",
     "zone.js": "^0.8.14"
   },
   "files": [
