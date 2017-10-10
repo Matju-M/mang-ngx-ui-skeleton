@@ -13,10 +13,10 @@
         "node_modules/@types"
     ],
     "include":[
-        "tmp/src-inlined/**/*.ts"
+        "./components/**/*.ts",
+        "src"
     ],
 	"exclude": [
-		"src",
         "node_modules",
         "dist"
 	]

@@ -7,7 +7,7 @@ const sourceRoot = "src";
 module.exports = {
     output: {
         root: "./dist",
-        temporary: "./tmp",
+        components: "./components",
         sass: `${outputRoot}/sass/${pkg.name}`
     },
     src: {

@@ -1,7 +1,7 @@
 import { Component } from "@angular/core";
 
 @Component({
-	selector: "mm-test-component",
+	selector: "mm-test",
 	templateUrl: "test.component.html"
 })
 export class TestComponent {
