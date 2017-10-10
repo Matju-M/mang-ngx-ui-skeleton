@@ -4,7 +4,7 @@ const config = require("../config");
 
 const INLINE_TEMPLATES = {
     src: config.src.ts,
-    dist: `${config.output.temporary}/src-inlined`,
+    dist: `${config.output.components}/`,
     config: {
       base: config.src.root,
       target: config.buildTarget,

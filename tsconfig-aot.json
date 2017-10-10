@@ -1,14 +1,14 @@
 {
     "extends": "./tsconfig-base",
     "compilerOptions": {
-        "rootDir": "./tmp/src-inlined",
+        "rootDir": "./components",
         "baseUrl": "",
         "paths": {
             "@angular/core": ["./node_modules/@angular/core"]
         }
     },
     "files": [
-        "./tmp/src-inlined/index.ts"
+        "./components/index.ts"
     ],
     "angularCompilerOptions": {
         "genDir": "./dist",

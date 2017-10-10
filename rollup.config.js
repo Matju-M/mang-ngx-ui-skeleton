@@ -3,13 +3,12 @@ import cleanup from "rollup-plugin-cleanup";
 import nodeResolve from "rollup-plugin-node-resolve-angular";
 
 const globals = {
-    "@angular/core": "ng.core",
-    // "rxjs/Observable": "Rx",
+    "@angular/core": "ng.core"
 };
 
 export default {
-    entry: "./tmp/src-inlined/index.ts",
-    dest: "./dist/index.js",
+    entry: "./components/index.ts",
+    dest: "./dist/components/index.js",
     format: "umd",
     exports: "named",
     moduleName: "@mang/ngx-ui-skeleton",
