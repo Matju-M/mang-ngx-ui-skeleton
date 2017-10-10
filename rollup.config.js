@@ -2,6 +2,10 @@ import typescript from "rollup-plugin-typescript2";
 import cleanup from "rollup-plugin-cleanup";
 import nodeResolve from "rollup-plugin-node-resolve-angular";
 
+const globalLibs = [
+	"@angular/core"
+];
+
 export default {
 	input: "./tmp/src-inlined/index.ts",
 	output: {
@@ -17,7 +21,5 @@ export default {
 			main: true
 		})
 	],
-	external: [
-		"@angular/core"
-	]
+	external: globalLibs
 }
