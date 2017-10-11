@@ -5,7 +5,7 @@ const runSeq = require("run-sequence");
 require("require-dir")("./tasks");
 
 gulp.task("prepare", (cb) => {
-    return runSeq("clean:pre", ["copy:styles", "inline:templates"], cb)
+    return runSeq(["copy:styles", "inline:templates"], cb)
 });
 
 

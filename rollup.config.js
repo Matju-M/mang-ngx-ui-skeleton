@@ -13,7 +13,7 @@ export default {
 		format: "umd",
 		name: "@mang/ngx-ui-skeleton",
 	},
-    plugins: [
+	plugins: [
 		typescript({
 			tsconfig: "tsconfig-jit.json"
 		}),
