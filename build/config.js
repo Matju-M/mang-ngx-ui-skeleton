@@ -8,7 +8,7 @@ module.exports = {
     output: {
         root: "./dist",
         components: "./components",
-        sass: `${outputRoot}/sass/${pkg.name}`
+        sass: `${outputRoot}/styles/${pkg.name}`
     },
     src: {
         root: sourceRoot,

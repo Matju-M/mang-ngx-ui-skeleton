@@ -2,6 +2,7 @@ import typescript from "rollup-plugin-typescript2";
 import cleanup from "rollup-plugin-cleanup";
 import nodeResolve from "rollup-plugin-node-resolve-angular";
 
+// todo remove this dependency
 const globalLibs = {
 	"@angular/core": "ng.core",
 }
