@@ -10,8 +10,8 @@
   "typings": "./dist/components/index.d.ts",
   "scripts": {
     "rebuild": "rimraf dist && yarn build",
-    "build": "yarn lint && gulp prepare && yarn _rollup && rimraf dist/src && gulp clean:post",
-    "build-aot": "gulp prepare && yarn lint && yarn ngc && gulp clean:post",
+    "build": "yarn lint && gulp prepare && yarn _rollup && rimraf dist/src && gulp clean:post-build",
+    "build-aot": "gulp prepare && yarn lint && yarn ngc && gulp clean:post-build",
     "ngc": "node_modules/.bin/ngc -p tsconfig-aot.json",
     "lint": "tslint src/**/*.ts && stylelint src/**/*.scss --fix",
     "test": "karma start",
