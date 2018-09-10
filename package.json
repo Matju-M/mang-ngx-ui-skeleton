@@ -38,7 +38,7 @@
     "_rollup": "rollup -c",
     "_rollup-watch": "rollup -c --watch"
   },
-  "author": "Betting Cloud",
+  "author": "Matthew Mangion",
   "license": "MIT",
   "peerDependencies": {
     "@angular/animations": "6.1.0",
