@@ -1,8 +1,8 @@
 import { Component } from "@angular/core";
 
 @Component({
-	selector: "mm-test",
-	templateUrl: "test.component.html"
+	selector: "gig-test",
+	templateUrl: "./test.component.html"
 })
 export class TestComponent {
 	public message: string;
