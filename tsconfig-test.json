@@ -1,0 +1,20 @@
+{
+    "extends": "./tsconfig-base",
+    "compilerOptions": {
+        "emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"importHelpers": true,
+        "module": "commonjs",
+        "sourceMap": true,
+        "target": "ES5"
+    },
+    "include": [
+        "karma-base.spec.ts",
+        "test/test-setup.spec.ts",
+        "src/**/*.ts"
+    ],
+    "exclude": [
+        "src/**/testing",
+        "node_modules/**/*.spec.js"
+    ]
+}

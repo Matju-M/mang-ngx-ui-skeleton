@@ -1,6 +1,9 @@
 {
     "extends": "./tsconfig",
+    "removeComments": true,
+    "sourceMap": true,
+    "isolatedModules": true,
     "include": [
-        "./components/**/*.ts"
+        "./.artifact/**/*.ts"
     ]
 }

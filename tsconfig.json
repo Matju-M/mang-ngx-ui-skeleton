@@ -2,6 +2,7 @@
     "extends": "./tsconfig-base",
     "compileOnSave": false,
     "compilerOptions": {
+        "baseUrl": ".",
         "sourceMap": true,
         "mapRoot": ""
     },
@@ -17,6 +18,9 @@
     ],
 	"exclude": [
         "node_modules",
-        "dist"
-	]
+        "dist",
+        "*.d.ts",
+        "**/*.d.ts",
+        "./.artifact/**/*.d.ts"
+    ]
 }

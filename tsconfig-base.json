@@ -5,14 +5,17 @@
         "emitDecoratorMetadata": true,
         "experimentalDecorators": true,
         "noImplicitAny": false,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
         "importHelpers": true,
-        "target": "es5",
-        "module": "es2015",
+        "target": "esnext",
+        "module": "esnext",
         "moduleResolution": "node",
-        "outDir": "./dist",
+        "outDir": "./.artifact",
+        "removeComments": true,
         "skipLibCheck": true,
         "lib": [
-            "es2015",
+            "esnext",
             "dom"
         ]
     }
