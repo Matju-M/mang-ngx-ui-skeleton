@@ -9,11 +9,14 @@ module.exports = {
             "declarations"
         ],
         "order/properties-alphabetical-order": true,
-        "selector-type-no-unknown": [
+        "selector-type-no-unknown": null,
+        "at-rule-no-unknown": [
             true,
             {
-                "ignoreTypes": [
-                    "/^mm-/"
+                "ignoreAtRules": [
+                  "extend",
+                  "function",
+                  "if"
                 ]
             }
         ]

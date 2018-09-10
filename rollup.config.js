@@ -1,29 +1,24 @@
-import typescript from "rollup-plugin-typescript2";
-import cleanup from "rollup-plugin-cleanup";
 import nodeResolve from "rollup-plugin-node-resolve-angular";
-
-// todo remove this dependency
-const globalLibs = {
-	"@angular/core": "ng.core",
-}
+import { name } from "./package.json";
 
 export default {
-	input: "./components/index.ts",
+	input: "./dist/index.js",
 	output: {
-		file: "./dist/components/index.js",
+		file: `./dist/index.umd.js`,
 		format: "umd",
-		name: "@mang/ngx-ui-skeleton",
+		name
 	},
 	plugins: [
-		typescript({
-			tsconfig: "tsconfig-jit.json"
-		}),
-		cleanup(),
 		nodeResolve({
 			jsnext: true,
 			main: true
 		})
 	],
-	external: Object.keys(globalLibs),
-    globals: globalLibs
+	external: id => !id.match(/(\.|:)/),
+	onwarn: warning => {
+		const code = warning.code;
+		if (code !== "UNRESOLVED_IMPORT" && code !== "MISSING_GLOBAL_NAME") {
+			console.warn(warning.message);
+		}
+	}
 }

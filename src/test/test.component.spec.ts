@@ -1,4 +1,3 @@
-import { CoreModule } from "../module";
 import {
 	async,
 	ComponentFixture,
@@ -10,21 +9,17 @@ import { TestComponent } from "./test.component";
 
 describe("TestComponentSpecs", () => {
 	let componentFixture: ComponentFixture<TestComponent>;
-	let componentInstance: TestComponent;
 
-	// Asynchronous beforeEach.
 	beforeEach(
 		async(() => {
 			TestBed.configureTestingModule({
-				imports: [CoreModule]
-			}).compileComponents().then(() => { /* do something... */ });
+				declarations: [TestComponent]
+			}).compileComponents().then(() => { /* You may decide to do something here... */ });
 		})
 	);
 
-	// Synchronous BeforeEach.
 	beforeEach(() => {
 		componentFixture = TestBed.createComponent(TestComponent);
-		componentInstance = componentFixture.componentInstance;
 	});
 
 	it("should display message", (done) => {
