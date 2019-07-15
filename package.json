@@ -88,7 +88,7 @@
     "requirejs": "^2.3.5",
     "rollup": "^0.63.4",
     "rollup-plugin-node-resolve-angular": "^2.0.3",
-    "run-sequence": "^2.2.0",
+    "run-sequence": "^2.2.1",
     "rxjs-tslint": "^0.1.5",
     "stylelint": "^9.1.1",
     "stylelint-config-standard": "^18.2.0",
