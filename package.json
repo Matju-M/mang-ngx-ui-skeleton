@@ -65,7 +65,7 @@
     "codelyzer": "^4.3.0",
     "concurrently": "^4.1.1",
     "del": "^3.0.0",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-conventional-changelog": "^2.0.3",
     "gulp-git": "^2.8.0",
     "gulp-inline-ng2-template": "^4.1.0",
