@@ -64,7 +64,7 @@
     "babel-core": "^6.26.3",
     "codelyzer": "^4.3.0",
     "concurrently": "^4.1.1",
-    "del": "^3.0.0",
+    "del": "^5.1.0",
     "gulp": "^3.9.1",
     "gulp-conventional-changelog": "^2.0.3",
     "gulp-git": "^2.8.0",
